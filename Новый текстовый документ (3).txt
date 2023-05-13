@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="grid">
+	<div class="box-1">Header</div>
+	<div class="box-2">Menu</div>
+	<div class="box-3">Main</div>
+	<div class="box-4">Righ</div>
+    <div class="box-5">Footer</div>	
+
+</div>
+
+
+		
+</body>
+</html>
+
+
+сss-------------------------------------------------------------------
+
+ html,
+ body {
+ 	height: 100%;
+ 	margin: 0%;
+
+ }
+
+.grid * {
+	      display: grid;
+	      padding: 20px 0;
+	      background-color: #eee;
+        text-align: center;
+        font-size: 30px;
+        
+        border: 1px solid black;
+        grid-gap: 10px;
+        color: red;
+
+}
+
+.grid {
+	      height: 100%;
+	      grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 100px  1fr 100px;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-areas: 
+
+        "header header header"
+        "menu main righ"
+        "menu footer footer " ;
+
+
+}
+
+.box-1 {
+	grid-area: header;
+
+}
+
+.box-2 {
+	grid-area: menu;
+
+}
+
+.box-3 {
+	grid-area: main;
+	
+}
+
+.box-4 {
+	grid-area: righ;
+	
+}
+
+.box-5 {
+	grid-area: footer;
+	
+}
+

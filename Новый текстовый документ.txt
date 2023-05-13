@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<div class="grid">
+		<header>Header</header>
+		<aside>Sidebar</aside>
+		<main>
+			<div>item-1</div>
+			<div>item-2</div>
+			<div>item-3</div>
+			<div>item-4</div>
+		</main>
+		<footer>Footer</footer>
+	</div>
+
+	
+</body>
+</html>
+
+
+
+CSS-----------------------------------------------------------------------------------
+
+html,
+body{
+	margin:0;
+	height: 100%;
+
+}
+
+.grid * {
+	color: #fff;
+	background: #1C9ED4;
+	text-align: center;
+	font-size: 22px;
+	border: 1px solid black;
+	padding: 10px ;
+	font-family: sans-serif;
+
+
+
+}
+
+.grid{
+	 height: 100%;
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: 200px 1fr;
+   grid-template-rows: 100px 1fr 100px;
+   grid-template-areas:  
+      "header header"
+      "aside main"
+      "aside footer";
+
+
+}
+
+
+header {
+	grid-area: header;
+
+}
+aside{
+	grid-area: aside;
+}
+main{
+	grid-area: main;
+
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+
+}
+footer{
+	grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
